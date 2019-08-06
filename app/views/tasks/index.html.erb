@@ -7,7 +7,7 @@
       <% else %>
         <%= 'status: ❌'  %>
       <% end %>
-      <%= link_to '🗑', delete_task_path(task), method: :delete, data: { confirm: "Are you sure?" } %>
+      <%= link_to '🗑', task_path(task), method: :delete, data: { confirm: "Are you sure?" } %>
   </li>
   <% end %>
 </ul>
